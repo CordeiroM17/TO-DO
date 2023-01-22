@@ -1,0 +1,104 @@
+/* Variables */
+
+$color_body: #121212;
+$color_primario: #bb86fc;
+$color_primario_variacion: #3700b3;
+$color_secundario: #03dac6;
+$color_error: #cf6679;
+$color_light: #ffffff;
+
+/* Body */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    #body {
+        height: 100vh;
+        background-color: $color_body;
+        .contenedor {
+            height: 600px; width: 400px;
+            margin: 0 auto;
+            max-width: 80%;
+            .perfil {
+                #fecha {
+                    color: $color_light;
+                    padding: 50px 0 5px 0;
+                }
+                h1 {
+                    color: $color_light;
+                }
+                span {
+                    color: $color_light;
+                }
+            }
+            .agregar_tarea {
+                background-color: $color_light;
+                border-radius: 15px;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                gap: 70px;
+                margin: 40px 0;
+                input {
+                    height: 100%; width: 100%;
+                    border-radius: 8px;
+                    border: none;
+                    background-color: $color_light;
+                    &::placeholder {
+                        font-size: 1.1rem;
+                        color: $color_primario;
+                    }
+                }
+                i {
+                    font-size: 50px;
+                    color: $color_primario;
+                    &:hover {
+                        transform: scale(1.1);
+                        cursor: pointer;
+                    }
+                }
+            }
+            .seccion_tareas {
+                h3 {
+                    color: $color_light;
+                    margin-bottom: 20px;
+                }
+                #lista {
+                    padding: 0;
+                    li {
+                        background-color: $color_secundario;
+                        border-radius: 15px;
+                        padding: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin: 10px 0;
+                        color: $color_light;
+                        i {
+                            font-size: 25px;
+                            &:hover {
+                                cursor: pointer;
+                                color: $color_primario;
+                            }
+                        }
+                        .subrayado {
+                            text-decoration: line-through;
+                            color: $color_primario_variacion;
+                        }
+                        .borrar {
+                            &:hover {
+                                color: $color_error;
+                            }
+                        }
+                        .text {
+                            font-size: 1.2rem;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

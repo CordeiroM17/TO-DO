@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO DO</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Bootstrap 5.3V -->
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
-<body>
+<body id="body">
     
-    <main>
+    <div class="contenedor">
 
         <section class="perfil">
             <div id="fecha"></div>
@@ -18,8 +22,18 @@
 
         <section class="agregar_tarea">
             <input type="text" id="input" placeholder="Agregar una tarea">
+            <i id="enter" class="bi bi-plus-circle"></i>
         </section>
-    </main>
 
+        <section class="seccion_tareas">
+            <h3>Tareas pendientes</h3>
+            <ul id="lista">
+        
+            </ul>
+        </section>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

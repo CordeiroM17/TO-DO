@@ -1,0 +1,72 @@
+/* Variables */
+/* Body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  * #body {
+    height: 100vh;
+    background-color: #121212; }
+    * #body .contenedor {
+      height: 600px;
+      width: 400px;
+      margin: 0 auto;
+      max-width: 80%; }
+      * #body .contenedor .perfil #fecha {
+        color: #ffffff;
+        padding: 50px 0 5px 0; }
+      * #body .contenedor .perfil h1 {
+        color: #ffffff; }
+      * #body .contenedor .perfil span {
+        color: #ffffff; }
+      * #body .contenedor .agregar_tarea {
+        background-color: #ffffff;
+        border-radius: 15px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        gap: 70px;
+        margin: 40px 0; }
+        * #body .contenedor .agregar_tarea input {
+          height: 100%;
+          width: 100%;
+          border-radius: 8px;
+          border: none;
+          background-color: #ffffff; }
+          * #body .contenedor .agregar_tarea input::placeholder {
+            font-size: 1.1rem;
+            color: #bb86fc; }
+        * #body .contenedor .agregar_tarea i {
+          font-size: 50px;
+          color: #bb86fc; }
+          * #body .contenedor .agregar_tarea i:hover {
+            transform: scale(1.1);
+            cursor: pointer; }
+      * #body .contenedor .seccion_tareas h3 {
+        color: #ffffff;
+        margin-bottom: 20px; }
+      * #body .contenedor .seccion_tareas #lista {
+        padding: 0; }
+        * #body .contenedor .seccion_tareas #lista li {
+          background-color: #03dac6;
+          border-radius: 15px;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 10px 0;
+          color: #ffffff; }
+          * #body .contenedor .seccion_tareas #lista li i {
+            font-size: 25px; }
+            * #body .contenedor .seccion_tareas #lista li i:hover {
+              cursor: pointer;
+              color: #bb86fc; }
+          * #body .contenedor .seccion_tareas #lista li .subrayado {
+            text-decoration: line-through;
+            color: #3700b3; }
+          * #body .contenedor .seccion_tareas #lista li .borrar:hover {
+            color: #cf6679; }
+          * #body .contenedor .seccion_tareas #lista li .text {
+            font-size: 1.2rem;
+            margin: 0; }
