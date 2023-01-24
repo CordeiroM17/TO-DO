@@ -20,11 +20,22 @@ $color_light: #ffffff;
             height: 600px; width: 400px;
             margin: 0 auto;
             max-width: 80%;
-            padding-top: 100px;
             .perfil {
-                #fecha {
-                    color: $color_light;
-                    padding: 50px 0 5px 0;
+                .fecha_container {
+                    background-color: $color_light;
+                    border-radius: 15px;
+                    margin: 50px 0 15px 0;
+                    .fecha {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        #ciudad {
+                            color: $color_body;
+                        }
+                        #grados {
+                            color: $color_body;
+                        }
+                    }
                 }
                 h1 {
                     color: $color_light;
@@ -40,7 +51,7 @@ $color_light: #ffffff;
                 display: flex;
                 align-items: center;
                 padding: 10px;
-                gap: 70px;
+                gap: 10px;
                 margin: 40px 0;
                 input {
                     height: 100%; width: 100%;
@@ -51,6 +62,7 @@ $color_light: #ffffff;
                         font-size: 1.1rem;
                         background-color: $color_light;
                         color: $color_body;
+                        padding-left: 10px;
                     }
                 }
                 i {
@@ -98,6 +110,9 @@ $color_light: #ffffff;
                         .text {
                             font-size: 1.2rem;
                             margin: 0;
+                        }
+                        .bi-check-circle {
+                            color: $color_primario;
                         }
                     }
                 }
