@@ -6,9 +6,8 @@ let btnEnter = document.querySelector("#enter");
 let check = "bi-circle";
 let uncheck = "bi-check-circle";
 let subrayado = "subrayado";
-let id
-let listaElementos
-
+let id;
+let listaElementos;
 
 function agregarTarea(tarea, id , realizado, eliminado) {
 
@@ -32,10 +31,7 @@ btnEnter.addEventListener("click", () => {
     if(tarea) {
         agregarTarea(tarea, id, false, false);
         listaElementos.push({
-            nombre: tarea,
-            id: id,
-            realizado: false,
-            eliminado: false
+            nombre: tarea, id: id, realizado: false, eliminado: false
         })
     }
     localStorage.setItem("lista", JSON.stringify(listaElementos));
@@ -54,6 +50,14 @@ function tareaEliminada(e) {
     let padre = e.parentNode;
     padre.remove();
     listaElementos[e.id].eliminado = true;
+    Toastify({
+        text: "Tarea Eliminada",
+        className: "info",
+        duration: 3000,
+        style: {
+          background: "#cf6679",
+        }
+      }).showToast();
 };
 
 lista.addEventListener("click", function(event) {

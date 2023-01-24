@@ -6,12 +6,14 @@
   box-sizing: border-box; }
   * #body {
     height: 100vh;
-    background-color: #121212; }
+    background-color: #121212;
+    text-align: center; }
     * #body .contenedor {
       height: 600px;
       width: 400px;
       margin: 0 auto;
-      max-width: 80%; }
+      max-width: 80%;
+      padding-top: 100px; }
       * #body .contenedor .perfil #fecha {
         color: #ffffff;
         padding: 50px 0 5px 0; }
@@ -36,10 +38,11 @@
           background-color: #ffffff; }
           * #body .contenedor .agregar_tarea input::placeholder {
             font-size: 1.1rem;
-            color: #bb86fc; }
+            background-color: #ffffff;
+            color: #121212; }
         * #body .contenedor .agregar_tarea i {
           font-size: 50px;
-          color: #bb86fc; }
+          color: #121212; }
           * #body .contenedor .agregar_tarea i:hover {
             transform: scale(1.1);
             cursor: pointer; }
@@ -49,8 +52,9 @@
       * #body .contenedor .seccion_tareas #lista {
         padding: 0; }
         * #body .contenedor .seccion_tareas #lista li {
-          background-color: #03dac6;
+          background-color: #121212;
           border-radius: 15px;
+          border: 2px solid #ffffff;
           padding: 10px;
           display: flex;
           align-items: center;
@@ -64,7 +68,7 @@
               color: #bb86fc; }
           * #body .contenedor .seccion_tareas #lista li .subrayado {
             text-decoration: line-through;
-            color: #3700b3; }
+            color: #bb86fc; }
           * #body .contenedor .seccion_tareas #lista li .borrar:hover {
             color: #cf6679; }
           * #body .contenedor .seccion_tareas #lista li .text {
