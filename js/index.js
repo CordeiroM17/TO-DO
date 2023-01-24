@@ -98,8 +98,8 @@ function tareaEliminada(e) {
       }).showToast();
 };
 
-lista.addEventListener("click", function(event) {
-    let elemento = event.target;
+lista.addEventListener("click", function(e) {
+    let elemento = e.target;
     let datos = elemento.attributes.data.value;
     
     if(datos === "realizado") {
