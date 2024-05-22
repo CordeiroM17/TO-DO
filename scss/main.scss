@@ -57,19 +57,26 @@ $color_light: #ffffff;
                     height: 100%; width: 100%;
                     border-radius: 8px;
                     border: none;
+                    outline: none;
                     background-color: $color_light;
+                    padding-left: 10px;
                     &::placeholder {
                         font-size: 1.1rem;
                         background-color: $color_light;
                         color: $color_body;
-                        padding-left: 10px;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                    &:active {
+                        outline: none;
                     }
                 }
                 i {
                     font-size: 50px;
                     color: $color_body;
                     &:hover {
-                        transform: scale(1.1);
+                        transform: scale(1.05);
                         cursor: pointer;
                     }
                 }

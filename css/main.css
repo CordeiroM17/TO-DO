@@ -44,17 +44,22 @@
           width: 100%;
           border-radius: 8px;
           border: none;
-          background-color: #ffffff; }
+          outline: none;
+          background-color: #ffffff;
+          padding-left: 10px; }
           * #body .contenedor .agregar_tarea input::placeholder {
             font-size: 1.1rem;
             background-color: #ffffff;
-            color: #121212;
-            padding-left: 10px; }
+            color: #121212; }
+          * #body .contenedor .agregar_tarea input:focus {
+            outline: none; }
+          * #body .contenedor .agregar_tarea input:active {
+            outline: none; }
         * #body .contenedor .agregar_tarea i {
           font-size: 50px;
           color: #121212; }
           * #body .contenedor .agregar_tarea i:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
             cursor: pointer; }
       * #body .contenedor .seccion_tareas h3 {
         color: #ffffff;

@@ -43,8 +43,7 @@ if(navigator.geolocation) {
             .catch(error => {
                 console.log(error);
             })
-    })
-        
+    })    
 }
 
 function agregarTarea(tarea, id , realizado, eliminado) {
@@ -68,6 +67,7 @@ btnEnter.addEventListener("click", () => {
     let tarea = input.value;
     if(tarea) {
         agregarTarea(tarea, id, false, false);
+
         listaElementos.push({
             nombre: tarea, id: id, realizado: false, eliminado: false
         })
@@ -81,6 +81,8 @@ function tareaCompletada(elemento) {
     elemento.classList.toggle(uncheck);
     elemento.classList.toggle(check);
     elemento.parentNode.querySelector(".text").classList.toggle(subrayado);
+
+    localStorage.setItem("lista", JSON.stringify(listaElementos));
     listaElementos[elemento.id].realizado = listaElementos[elemento.id].realizado ? false : true;
 };
 
