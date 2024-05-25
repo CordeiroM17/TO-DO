@@ -1,6 +1,6 @@
 # To-Do List Application
 
-This is a simple To-Do List application developed as part of the JavaScript course challenge at CoderHouse. The application allows you to add tasks that you need to complete during the day. It uses pure JavaScript, HTML, and SCSS. Tasks are saved using local storage, and the application also fetches weather information for your city using a weather API.
+This **To-Do List application** was created as a challenge during a JavaScript course at CoderHouse. It helps you manage daily tasks by adding and storing them using JavaScript, HTML, and SCSS. The app saves tasks locally and provides weather updates for your city using an API
 
 ## Table of Contents
 - [Demo](#demo)
@@ -10,7 +10,8 @@ This is a simple To-Do List application developed as part of the JavaScript cour
 - [Usage](#usage)
 
 ## Demo
-You can see a live demo of the application [here](https://tareas-pendientes.onrender.com).
+Try out the To-Do List application and manage your tasks efficiently. Click the link below to access the demo: [here](https://tareas-pendientes.onrender.com).
+
 
 ## Features
 - Add tasks to the to-do list.
@@ -50,4 +51,5 @@ To run this project locally, follow these steps:
 1. Click the "trash" button next to a task to remove it from your list.
 
 ### Weather Information
-- The application will automatically fetch and display the current weather information for your city when you open it. Of course, you need to accept it!!!
+- When you open the application, it automatically fetches and displays the current weather information for your city. Make sure to accept the weather permissions for accurate updates!
+
